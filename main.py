@@ -52,9 +52,10 @@ columns = [    # Dati utente / sessione
     "miniRules1_statusInfos"
 ]
 
-df =load_train_data(columns_to_use=columns, sample_size=4000)
+df =load_train_data(columns_to_use=columns, sample_size=4000, min_ranker_occurrences= 6)
 
 print(df.info())
+
 
 
 
